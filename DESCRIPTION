@@ -1,0 +1,13 @@
+Package: lbquest
+Title: lbquest
+Version: 0.1
+Authors@R: 
+    person(given = "Luca",
+           family = "Braglia",
+           role = c("aut", "cre"),
+           email = "lbraglia@gmail.com")
+Description: Tools to help with cross cultural adaptation
+    and pychometric validation of questionnaires/research instruments
+License: GPL-3
+Encoding: UTF-8
+LazyData: true

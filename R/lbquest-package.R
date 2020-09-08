@@ -5,4 +5,5 @@
 # roxygen namespace tags. Modify with care!
 ## usethis namespace: start
 ## usethis namespace: end
+#' @importFrom lbmisc is.percentage
 NULL

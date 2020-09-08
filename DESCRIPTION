@@ -11,3 +11,4 @@ Description: Tools to help with cross cultural adaptation
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.1.0

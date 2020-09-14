@@ -43,10 +43,12 @@ cvi <- function(x, strict = TRUE){
 
     ## stats
     not_missing <- unlist(lapply(x, function(y) sum(!is.na(y))))
-    relevant <- unlist(lapply(x, function(y) sum(y == 'Relevant')))
+    relevant <- unlist(lapply(x, function(y) sum(y %in% 'Relevant')))
+    not_relevant <- unlist(lapply(x, function(y) sum(y %in% 'Not relevant')))
     icvi <- (relevant / not_missing)
     tab <- data.frame('item' = names(x),
                       'not_missing' = not_missing,
+                      'not_relevant' = not_relevant,
                       'relevant' = relevant,
                       'i_cvi' = icvi)
     rownames(tab) <- NULL
